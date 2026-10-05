@@ -13,11 +13,11 @@ elif sign == "*":
     result = num1 * num2
     print("The result is: ", result)
 elif sign == "/":
-    if num2 != 0:
+    if num2 == 0:
+        print("Error: Division by zero is not allowed.")
+    else:
         result = num1 / num2
         print("The result is: ", result)
-    else:
-        print("Error: Division by zero is not allowed.")
 else:
     print("Error: Invalid operator sign.")
     
